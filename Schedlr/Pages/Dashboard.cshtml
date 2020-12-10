@@ -4,13 +4,11 @@
     @Html.AntiForgeryToken(); // excplicity defining an anti forgery token for the ajax post
 }
 
-<div class="text-center">
-    <h1 class="display-4">Employee Dashboard</h1>
-</div>
-<div class="row">
-    <div class="col-lg-12">
+<div class="jumbotron">
+    <h1 class="">Dashboard</h1>
+    <p class="lead">Welcome to your personalised dashboard!</p>
+    <hr class="my-4">
 
-    </div>
 </div>
 
 
@@ -137,232 +135,232 @@
 </div>
 @section Scripts {
 
-<script type="text/javascript">
-    $(document).ready(function () {
+    <script type="text/javascript">
+        $(document).ready(function () {
 
-        // when user clicks on a shift card
-        $('.shiftCard').click(function () {
-            var data = $(this).attr('value'); // getting the shift id from value attribute
-            var date = $(this).find(".card-title").text();  // variable holding date
-            alert(date);
+            // when user clicks on a shift card
+            $('.shiftCard').click(function () {
+                var data = $(this).attr('value'); // getting the shift id from value attribute
+                var date = $(this).find(".card-title").text();  // variable holding date
+                alert(date);
 
-            $.ajax({
-                cache: false,
-                type: "POST",
-                url: "/Dashboard?handler=ShiftInfo", // handler
-                data: { id: data }, // binding params
-                dataType: 'json',
+                $.ajax({
+                    cache: false,
+                    type: "POST",
+                    url: "/Dashboard?handler=ShiftInfo", // handler
+                    data: { id: data }, // binding params
+                    dataType: 'json',
 
-                headers: {
-                    RequestVerificationToken:
-                        $('input:hidden[name="__RequestVerificationToken"]').val() // security token
-                },
-                success: function (result) { // returning a list of employees from handler function
-                    var content = document.getElementById('modal-content'); // the list in the modal
-                    var ul = document.getElementById("staff-list");
-                    var shiftInfo = document.getElementById("shift-header");
-                    shiftInfo.innerHTML = "Shift Date: " + date;
-                    shiftInfo.setAttribute('value', date);
+                    headers: {
+                        RequestVerificationToken:
+                            $('input:hidden[name="__RequestVerificationToken"]').val() // security token
+                    },
+                    success: function (result) { // returning a list of employees from handler function
+                        var content = document.getElementById('modal-content'); // the list in the modal
+                        var ul = document.getElementById("staff-list");
+                        var shiftInfo = document.getElementById("shift-header");
+                        shiftInfo.innerHTML = "Shift Date: " + date;
+                        shiftInfo.setAttribute('value', date);
 
-                    for (var i = 0; i < result.length; i++) {
-                        var employee = result[i];
-                        var li = document.createElement("li");
-                        li.setAttribute('id', employee.employeeId); // setting value of the id attribute to the employee id
-                        li.appendChild(document.createTextNode(employee.jobTitle + " - " + employee.firstName + "  " + employee.lastName));
+                        for (var i = 0; i < result.length; i++) {
+                            var employee = result[i];
+                            var li = document.createElement("li");
+                            li.setAttribute('id', employee.employeeId); // setting value of the id attribute to the employee id
+                            li.appendChild(document.createTextNode(employee.jobTitle + " - " + employee.firstName + "  " + employee.lastName));
 
-                        ul.appendChild(li);
+                            ul.appendChild(li);
+                        }
+                        content.appendChild(ul);
+
+                        $("modal").modal('show');
+
+                    },
+
+                    error: function (result) {
+                        alert(result.responseText);
+
                     }
-                    content.appendChild(ul);
-
-                    $("modal").modal('show');
-
-                },
-
-                error: function (result) {
-                    alert(result.responseText);
-
-                }
 
 
+                });
+
+            });
+        });
+
+
+
+        $(function () {
+
+            $("#shift-close-btn").click(function () {
+                $("modal").modal("hide");
+                //alert("close pressed");
             });
 
         });
-    });
-
-
-
-    $(function () {
-
-        $("#shift-close-btn").click(function () {
-            $("modal").modal("hide");
-            //alert("close pressed");
-        });
-
-    });
-    $(document).ready(function () { // function for removing modal contents after close
-        $(".modal").on("hidden.bs.modal", function () {
-            $("#staff-list").html("");
-        });
-
-    });
-
-    /* Function to approve a shift swap notification */
-    $(document).ready(function () {
-
-        $('.swap-shift-btn').click(function () {
-            var empId = document.getElementById('id-attr').innerHTML;
-            //var  empId = empVar.innerHTML;
-            var shiftId = document.getElementById('shift-id').innerHTML;
-            var empId2 = $('#employee-notification').attr("value");
-            alert(empId2);
-
-            $.ajax({
-                cache: false,
-                type: "POST",
-                url: "/Dashboard?handler=SwapShift", // handler
-                data: { employeeId: empId, shiftId: shiftId, employeeId2: empId2 }, // binding params
-                dataType: 'json',
-
-                headers: {
-                    RequestVerificationToken:
-                        $('input:hidden[name="__RequestVerificationToken"]').val() // security token
-                },
-                success: function (result) { // returning a list of employees from handler function
-                    alert(result.ShiftId);
-                },
-                error: function (result) {
-                    alert(result.responseText);
-
-                }
+        $(document).ready(function () { // function for removing modal contents after close
+            $(".modal").on("hidden.bs.modal", function () {
+                $("#staff-list").html("");
             });
+
         });
 
-    });
+        /* Function to approve a shift swap notification */
+        $(document).ready(function () {
 
-    /*function to reject the swap and delete notification */
-    $(document).ready(function () {
+            $('.swap-shift-btn').click(function () {
+                var empId = document.getElementById('id-attr').innerHTML;
+                //var  empId = empVar.innerHTML;
+                var shiftId = document.getElementById('shift-id').innerHTML;
+                var empId2 = $('#employee-notification').attr("value");
+                alert(empId2);
 
-        $('.reject-shift-btn').click(function () {
-            var id = $('#notification-id').text();
+                $.ajax({
+                    cache: false,
+                    type: "POST",
+                    url: "/Dashboard?handler=SwapShift", // handler
+                    data: { employeeId: empId, shiftId: shiftId, employeeId2: empId2 }, // binding params
+                    dataType: 'json',
+
+                    headers: {
+                        RequestVerificationToken:
+                            $('input:hidden[name="__RequestVerificationToken"]').val() // security token
+                    },
+                    success: function (result) { // returning a list of employees from handler function
+                        alert(result.ShiftId);
+                    },
+                    error: function (result) {
+                        alert(result.responseText);
+
+                    }
+                });
+            });
+
+        });
+
+        /*function to reject the swap and delete notification */
+        $(document).ready(function () {
+
+            $('.reject-shift-btn').click(function () {
+                var id = $('#notification-id').text();
 
 
-            $.ajax({
-                cache: false,
-                type: "POST",
-                url: "/Dashboard?handler=RejectSwap",
-                data: { notificationId: id },
-                dataType: 'json',
+                $.ajax({
+                    cache: false,
+                    type: "POST",
+                    url: "/Dashboard?handler=RejectSwap",
+                    data: { notificationId: id },
+                    dataType: 'json',
 
-                headers: {
-                    RequestVerificationToken:
-                        $('input:hidden[name="__RequestVerificationToken"]').val() // security token
-                },
-                success: function (result) {
+                    headers: {
+                        RequestVerificationToken:
+                            $('input:hidden[name="__RequestVerificationToken"]').val() // security token
+                    },
+                    success: function (result) {
 
-                },
-                error: function (result) {
-                    alert(result.responseText);
-                }
+                    },
+                    error: function (result) {
+                        alert(result.responseText);
+                    }
+
+                });
 
             });
 
         });
 
-    });
+        /* function to request a list of employees to swap */
+        $(document).ready(function () {
+            $('#swap-btn').click(function () {
+                var shiftId = $('#shift-header').attr("value"); // storing the shift date variable
+                // alert(shiftId);
+                $("#staff-list").html("");
+                $("#modal-content").html("");
 
-    /* function to request a list of employees to swap */
-    $(document).ready(function () {
-        $('#swap-btn').click(function () {
-            var shiftId = $('#shift-header').attr("value"); // storing the shift date variable
-            // alert(shiftId);
-            $("#staff-list").html("");
-            $("#modal-content").html("");
+                $.ajax({
+                    cache: false,
+                    type: "POST",
+                    url: "/Dashboard?handler=GetEmployees", // handler
+                    data: { shiftId: shiftId },
+                    dataType: 'json',
+                    headers: {
+                        RequestVerificationToken:
+                            $('input:hidden[name="__RequestVerificationToken"]').val() // security token
+                    },
+                    success: function (result) {
+                        alert(result[0].firstName);
+                        var content = document.getElementById('modal-content');
+                        var ul = document.getElementById("staff-list");
+                        var staffTitle = document.getElementById("shift-title");
+                        staffTitle.innerHTML = "Employees To Swap";
+                        //setAttribute
+                        for (var i = 0; i < result.length; i++) {
+                            var employee = result[i];
+                            //var li = document.createElement("input");
+                            //var check = document.createElement("input");
+                            //li.setAttribute('id', employee.employeeId); // setting value of the id attribute to the employee id
+                            var shiftProfile = document.createElement('div');
+                            shiftProfile.setAttribute('id', employee.employeeId);
+                            shiftProfile.setAttribute('class', "employee-swap-shift");
 
-            $.ajax({
-                cache: false,
-                type: "POST",
-                url: "/Dashboard?handler=GetEmployees", // handler
-                data: { shiftId: shiftId },
-                dataType: 'json',
-                headers: {
-                    RequestVerificationToken:
-                        $('input:hidden[name="__RequestVerificationToken"]').val() // security token
-                },
-                success: function (result) {
-                    alert(result[0].firstName);
-                    var content = document.getElementById('modal-content');
-                    var ul = document.getElementById("staff-list");
-                    var staffTitle = document.getElementById("shift-title");
-                    staffTitle.innerHTML = "Employees To Swap";
-                    //setAttribute
-                    for (var i = 0; i < result.length; i++) {
-                        var employee = result[i];
-                        //var li = document.createElement("input");
-                        //var check = document.createElement("input");
-                        //li.setAttribute('id', employee.employeeId); // setting value of the id attribute to the employee id
-                        var shiftProfile = document.createElement('div');
-                        shiftProfile.setAttribute('id', employee.employeeId);
-                        shiftProfile.setAttribute('class', "employee-swap-shift");
+                            var name = document.createElement('p');
+                            name.innerHTML = employee.firstName + " " + employee.lastName;
+                            var selectBtn = document.createElement('button');
+                            selectBtn.setAttribute('id', employee.employeeId);
+                            selectBtn.setAttribute('class', "btn btn-primary employee-swap-btn");
+                            // var checkbox = document.createElement("input");
+                            // checkbox.type = 'checkbox';
+                            document.getElementById('swap-btn').innerHTML = "Request Swap";
 
-                        var name = document.createElement('p');
-                        name.innerHTML = employee.firstName + " " + employee.lastName;
-                        var selectBtn = document.createElement('button');
-                        selectBtn.setAttribute('id', employee.employeeId);
-                        selectBtn.setAttribute('class', "btn btn-primary employee-swap-btn");
-                        // var checkbox = document.createElement("input");
-                        // checkbox.type = 'checkbox';
-                        document.getElementById('swap-btn').innerHTML = "Request Swap";
+                            //li.appendChild(checkbox);
 
-                        //li.appendChild(checkbox);
-
-                        name.append(selectBtn);
-                        shiftProfile.appendChild(name);
-                        //shiftProfile.appendChild(selectBtn);
-                        // li.appendChild(document.createTextNode(employee.firstName + " " + employee.lastName + " " + employee.jobTitle));
-                        content.appendChild(shiftProfile);
+                            name.append(selectBtn);
+                            shiftProfile.appendChild(name);
+                            //shiftProfile.appendChild(selectBtn);
+                            // li.appendChild(document.createTextNode(employee.firstName + " " + employee.lastName + " " + employee.jobTitle));
+                            content.appendChild(shiftProfile);
 
 
-                        $('employee-swap-btn').click(function () {
-                            var empId = $(this).attr('id');
-                            var senderId = $('#id-attr').text();
-                            var shiftDate = $('#shift-header').attr('value');
-                            var notificationText = "Swap Request From " + $('#employee-full-name').text();
-                            var shiftId = document.getElementById('shift-id').innerHTML;
-                            alert(shiftDate);
-                            $.ajax({
-                                cache: false,
-                                type: "POST",
-                                url: "/Dashboard?handler=SendNotification", // handler
-                                data: { empId: empId, senderId: senderId, shiftDate: shiftDate, notificationText: notificationText, shiftId: shiftId },
-                                dataType: 'json',
-                                headers: {
-                                    RequestVerificationToken:
-                                        $('input:hidden[name="__RequestVerificationToken"]').val() // security token
-                                },
-                                success: function (result) {
+                            $('employee-swap-btn').click(function () {
+                                var empId = $(this).attr('id');
+                                var senderId = $('#id-attr').text();
+                                var shiftDate = $('#shift-header').attr('value');
+                                var notificationText = "Swap Request From " + $('#employee-full-name').text();
+                                var shiftId = document.getElementById('shift-id').innerHTML;
+                                alert(shiftDate);
+                                $.ajax({
+                                    cache: false,
+                                    type: "POST",
+                                    url: "/Dashboard?handler=SendNotification", // handler
+                                    data: { empId: empId, senderId: senderId, shiftDate: shiftDate, notificationText: notificationText, shiftId: shiftId },
+                                    dataType: 'json',
+                                    headers: {
+                                        RequestVerificationToken:
+                                            $('input:hidden[name="__RequestVerificationToken"]').val() // security token
+                                    },
+                                    success: function (result) {
 
-                                    alert(result);
-                                },
+                                        alert(result);
+                                    },
+                                });
+
                             });
 
-                        });
+
+                        }
 
 
+                    },
+                    error: function (result) {
+                        alert(result.responseText);
                     }
+                });
 
-
-                },
-                error: function (result) {
-                    alert(result.responseText);
-                }
             });
 
         });
 
-    });
 
 
 
-
-</script>
+    </script>
 }

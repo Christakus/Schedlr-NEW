@@ -7,10 +7,11 @@ html, body {
   
 }
 .main-content {
-    background-color: #eeeeee !important;
 }
 
-
+.col-md-4 {
+    background-color: #f7f7f9 !important;
+}
 .shiftList
  {
     text-align: left;
@@ -201,7 +202,7 @@ html {
 
 
 .footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     white-space: nowrap;
