@@ -87,10 +87,14 @@ html, body {
     }
 /* END */
 
-cardLink:hover {
-    border-radius: 3px 3px 3px 3px !important;
-    text-decoration: underline !important;   
+.cardLink {
 
+}
+.cardLink:hover {
+    border-radius: 3px 3px 3px 3px !important;
+    text-decoration: underline !important;
+    background-color: whitesmoke;
+    color: #343a40!important;
 }
 
 .shiftCard {
@@ -99,6 +103,7 @@ cardLink:hover {
     margin-bottom: 10px;
     border: none !important;
     border-radius: 20px !important;
+    transition: 0.4s !important;
 }
 .card-title {
     text-align:center;
@@ -106,6 +111,11 @@ cardLink:hover {
 .empCard:hover {
 }
 .card:hover {
+    background-color: whitesmoke !important;
+    color: #343a40 !important;
+    border-color: #343a40 !important;
+    
+    border-style: solid !important;
 }
 .dashboard {
 }
