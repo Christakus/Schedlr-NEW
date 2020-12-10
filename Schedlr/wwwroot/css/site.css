@@ -38,26 +38,29 @@ html, body {
     height: 200px;
     overflow: scroll;
     direction: ltr;
+    transition: 0.5s;
 }
     .scroll2::-webkit-scrollbar {
-        background-color: #eeeeee;
+        background-color: #f7f7f9;
     }
 
 .scroll2::-webkit-scrollbar-track {
     border-radius: 10px;
+    
 }
 
     .scroll2::-webkit-scrollbar-thumb:hover {
-        background-color: #376b97 !important;
+        background-color: #f7f7f9 !important;
+        border-style:solid;
     }
 
     .scroll2::-webkit-scrollbar-thumb {
-        background-color: #498cc4;
+        background-color: #343a40;
         border-radius: 20px;
     }
 
     .scroll2::-webkit-scrollbar-corner {
-        background-color: #eeeeee;
+        background-color: #f7f7f9;
     }
 
 /* SCROLL BAR STYLING */
@@ -65,26 +68,28 @@ html, body {
     height: 400px;
     overflow: scroll;
     direction: ltr;
+    transition: 0.5s;
 }
 
     .scroll::-webkit-scrollbar {
-        background-color: #eeeeee;
+        background-color: #f7f7f9;
     }
 
     .scroll::-webkit-scrollbar-track {
         border-radius: 10px;
     }
     .scroll::-webkit-scrollbar-thumb:hover {
-        background-color: #376b97 !important;
+        background-color: #f7f7f9 !important;
+        border-style: solid;
     }
 
     .scroll::-webkit-scrollbar-thumb {
-        background-color: #498cc4;
+        background-color: #343a40;
         /**border-radius: 20px;)*/
-        border-radius: 10px;
+        border-radius: 15px;
     }
     .scroll::-webkit-scrollbar-corner {
-        background-color: #eeeeee;
+        background-color: #f7f7f9;
     }
 /* END */
 
@@ -105,6 +110,7 @@ html, body {
     border: none !important;
     border-radius: 20px !important;
     transition: 0.4s !important;
+    margin-right:5px;
 }
 .card-title {
     text-align:center;
