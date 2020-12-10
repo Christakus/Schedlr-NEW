@@ -1,0 +1,123 @@
+﻿@page
+@model Schedlr.Pages.CreateMeetingModel
+@{
+    ViewData["Title"] = "Create Meeting";
+}
+
+@Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <div class="text-center">
+
+        <h1 class="display-4"> Create Meeting </h1>
+    </div>
+
+    <form method="post">
+        <div class="justify-content-center align-items-center w-25" style="margin-top: 100px">
+            <div class="form-group">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <!-- asp-for links the input text to a property of an object in the model-->
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Meeting.MeetingID, htmlAttributes: new { @class = "control-label col-md-10" })
+                    <div class="col-12">
+
+                        @Html.EditorFor(model => model.Meeting.MeetingID, new { htmlAttributes = new { @class = "form-control form" } })
+                        @Html.ValidationMessageFor(model => model.Meeting.MeetingID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="justify-content-center align-items-center w-50" style="">
+            <div class="form-group">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <!-- asp-for links the input text to a property of an object in the model-->
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Meeting.MeetingDate, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-12">
+
+                        @Html.EditorFor(model => model.Meeting.MeetingDate, new { htmlAttributes = new { @class = "form-control form" } })
+                        @Html.ValidationMessageFor(model => model.Meeting.MeetingDate, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="justify-content-center align-items-center w-50" style="">
+            <div class="form-group">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <!-- asp-for links the input text to a property of an object in the model-->
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Meeting.MeetingTime, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-12">
+
+                        @Html.EditorFor(model => model.Meeting.MeetingTime, new { htmlAttributes = new { @class = "form-control form" } })
+                        @Html.ValidationMessageFor(model => model.Meeting.MeetingTime, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="justify-content-center align-items-center w-50" style="">
+            <div class="form-group">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <!-- asp-for links the input text to a property of an object in the model-->
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Meeting.EmployeeID, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-12">
+
+                        @Html.EditorFor(model => model.Meeting.EmployeeID, new { htmlAttributes = new { @class = "form-control form" } })
+                        @Html.ValidationMessageFor(model => model.Meeting.EmployeeID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="justify-content-center align-items-center w-50" style="">
+            <div class="form-group">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <!-- asp-for links the input text to a property of an object in the model-->
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Meeting.MeetingType, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-12">
+
+                        @Html.EditorFor(model => model.Meeting.MeetingType, new { htmlAttributes = new { @class = "form-control form" } })
+                        @Html.ValidationMessageFor(model => model.Meeting.MeetingType, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="justify-content-center align-items-center w-50" style="">
+            <div class="form-group">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <!-- asp-for links the input text to a property of an object in the model-->
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Meeting.MeetingLocation, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-12">
+
+                        @Html.EditorFor(model => model.Meeting.MeetingLocation, new { htmlAttributes = new { @class = "form-control form" } })
+                        @Html.ValidationMessageFor(model => model.Meeting.MeetingLocation, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="justify-content-center align-items-center w-50" style="">
+            <div class="form-group">
+                <div class=" col-5">
+                    <input type="submit" value="Create Meeting" class="btn btn-block btn-outline-light" />
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+</div>
+
+<div>
+    @Html.ActionLink("Back to Home", "Index")
+</div>
+
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,65 @@
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\DataLibrary.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\DataLibrary.pdb
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\Dapper.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\Dapper.xml
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\obj\Debug\DataLibrary.csprojAssemblyReference.cache
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\obj\Debug\DataLibrary.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\obj\Debug\DataLibrary.pdb
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Data.SqlClient.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Data.SqlClient.xml
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Security.AccessControl.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Security.Permissions.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Security.AccessControl.xml
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Security.Permissions.xml
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Buffers.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Memory.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Buffers.xml
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Memory.xml
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\CBrew\Documents\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\obj\Debug\DataLibrary.csprojAssemblyReference.cache
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\Database1.mdf
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\Database1_log.ldf
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\DataLibrary.dll.config
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\DataLibrary.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\DataLibrary.pdb
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\Dapper.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Buffers.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Data.SqlClient.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Memory.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Security.AccessControl.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Security.Permissions.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\Dapper.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Buffers.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Data.SqlClient.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Memory.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Security.AccessControl.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Security.Permissions.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\obj\Debug\DataLibrary.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\DataLibrary\obj\Debug\DataLibrary.pdb

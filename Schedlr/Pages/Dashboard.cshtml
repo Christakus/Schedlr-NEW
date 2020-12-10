@@ -1,0 +1,368 @@
+﻿@page
+@model Schedlr.Pages.DashboardModel
+@{
+    @Html.AntiForgeryToken(); // excplicity defining an anti forgery token for the ajax post
+}
+
+<div class="text-center">
+    <h1 class="display-4">Employee Dashboard</h1>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+
+    </div>
+</div>
+
+
+<div class="container row text-align:center" style=" border-radius:25px;">
+
+
+    <div class="col-md-4" style="">
+
+        <h4 style="text-align:center">Employee Profile</h4>
+
+        <div class=" " onclick="">
+            <div id="employee-full-name" class="" style="">Name: @Model.loggedEmployee.FirstName @Model.loggedEmployee.LastName</div>
+            <div class="" style="text-align: center; ">
+                <p id="id-attr" value="@Model.loggedEmployee.EmployeeId">@Model.loggedEmployee.EmployeeId</p>
+                <p>Job Title: @Model.loggedEmployee.JobTitle</p>
+                <p>Email Address: @Model.loggedEmployee.EmailAddress</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-4 ">
+
+        <div id="notification-area">
+            <h1>Notifications</h1>
+
+
+            @for (int i = 0; i < Model.Notifications.Count; i++)
+            {
+
+                <p id="employee-notification" value="@Model.ShiftsToSwap[i].EmployeeID">@Model.Notifications[i].NotificationText</p>
+                <p id="shift-id">@Model.ShiftsToSwap[i].ShiftID</p>
+                <p id="notification-id">
+                    @Model.Notifications[i].ID
+                </p>
+                <p id="shift-notification">
+                    @Model.ShiftsToSwap[i].ShiftDate <br /> @Model.ShiftsToSwap[i].ShiftRole <br /> @Model.ShiftsToSwap[i].ShiftStart
+                    - @Model.ShiftsToSwap[i].ShiftEnd
+                </p>
+                <button class="swap-shift-btn btn btn-primary">Approve Swap</button>
+                <button id="" class="reject-shift-btn btn btn-outline-warning">Reject Swap</button>
+            }
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h4 style="text-align:center"> Your Meetings</h4>
+
+                <div class="scroll2 scrollBar float-right d-flex flex-column" method="post" style="background:none;">
+
+                    @for (int i = 0; i < Model.Shifts.Count; i++)
+                    {
+                        <a href="#" id="shiftInfoClick" class="cardLink" data-toggle="modal" data-target="#shift-modal" style=" color: black;">
+                            <div class="shadow-sm card shiftCard" value="@Model.Shifts[i].ShiftID" onclick="" style="">
+
+                                <div class="card-title">@Model.Shifts[i].ShiftDate </div>
+                                <div class="card-body cardHover" style="text-align: center; ">
+                                    <p>@Model.Shifts[i].ShiftRole: @Model.Shifts[i].ShiftStart - @Model.Shifts[i].ShiftEnd</p>
+                                </div>
+                            </div>
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-md-4">
+        <h3 style="">Your Shifts</h3>
+        <div class="scroll scrollBar float-right" method="post" style="width:100%">
+
+
+            @for (int i = 0; i < Model.Shifts.Count; i++)
+            {
+                <a href="#" id="shiftInfoClick" class="cardLink" data-toggle="modal" data-target="#shift-modal">
+                    <div class="shadow-sm card shiftCard" value="@Model.Shifts[i].ShiftID" onclick="" style="">
+
+                        <div class="card-title">@Model.Shifts[i].ShiftDate </div>
+                        <div class="card-body cardHover" style="text-align: center; ">
+                            <p>@Model.Shifts[i].ShiftRole: @Model.Shifts[i].ShiftStart - @Model.Shifts[i].ShiftEnd</p>
+
+
+                        </div>
+                    </div>
+                </a>
+            }
+        </div>
+    </div>
+
+
+
+
+    <!---->
+    <div class="modal fade align-content-center" id="shift-modal">
+
+        <div class="model-content modal-dialog-scrollable">
+            <div class="model-header">
+                <h1 id="shift-title"> Shift Information</h1>
+            </div>
+            <div class="modal-body">
+                <h3 id="shift-header"></h3>
+                <ul id="staff-list" class="staff-list">
+                    <!-- Here is dynamically added list of employees working on a specified day-->
+
+                </ul>
+                <p id="modal-content"></p>
+                <button id="swap-btn" class="btn btn-primary">Swap This Shift</button>
+
+            </div>
+            <div class="modal-footer">
+                <input type="button" id="shift-close-btn" value="Close" class="btn btn-danger " data-dismiss="modal" data-target="#shift-modal" />
+
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+@section Scripts {
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        // when user clicks on a shift card
+        $('.shiftCard').click(function () {
+            var data = $(this).attr('value'); // getting the shift id from value attribute
+            var date = $(this).find(".card-title").text();  // variable holding date
+            alert(date);
+
+            $.ajax({
+                cache: false,
+                type: "POST",
+                url: "/Dashboard?handler=ShiftInfo", // handler
+                data: { id: data }, // binding params
+                dataType: 'json',
+
+                headers: {
+                    RequestVerificationToken:
+                        $('input:hidden[name="__RequestVerificationToken"]').val() // security token
+                },
+                success: function (result) { // returning a list of employees from handler function
+                    var content = document.getElementById('modal-content'); // the list in the modal
+                    var ul = document.getElementById("staff-list");
+                    var shiftInfo = document.getElementById("shift-header");
+                    shiftInfo.innerHTML = "Shift Date: " + date;
+                    shiftInfo.setAttribute('value', date);
+
+                    for (var i = 0; i < result.length; i++) {
+                        var employee = result[i];
+                        var li = document.createElement("li");
+                        li.setAttribute('id', employee.employeeId); // setting value of the id attribute to the employee id
+                        li.appendChild(document.createTextNode(employee.jobTitle + " - " + employee.firstName + "  " + employee.lastName));
+
+                        ul.appendChild(li);
+                    }
+                    content.appendChild(ul);
+
+                    $("modal").modal('show');
+
+                },
+
+                error: function (result) {
+                    alert(result.responseText);
+
+                }
+
+
+            });
+
+        });
+    });
+
+
+
+    $(function () {
+
+        $("#shift-close-btn").click(function () {
+            $("modal").modal("hide");
+            //alert("close pressed");
+        });
+
+    });
+    $(document).ready(function () { // function for removing modal contents after close
+        $(".modal").on("hidden.bs.modal", function () {
+            $("#staff-list").html("");
+        });
+
+    });
+
+    /* Function to approve a shift swap notification */
+    $(document).ready(function () {
+
+        $('.swap-shift-btn').click(function () {
+            var empId = document.getElementById('id-attr').innerHTML;
+            //var  empId = empVar.innerHTML;
+            var shiftId = document.getElementById('shift-id').innerHTML;
+            var empId2 = $('#employee-notification').attr("value");
+            alert(empId2);
+
+            $.ajax({
+                cache: false,
+                type: "POST",
+                url: "/Dashboard?handler=SwapShift", // handler
+                data: { employeeId: empId, shiftId: shiftId, employeeId2: empId2 }, // binding params
+                dataType: 'json',
+
+                headers: {
+                    RequestVerificationToken:
+                        $('input:hidden[name="__RequestVerificationToken"]').val() // security token
+                },
+                success: function (result) { // returning a list of employees from handler function
+                    alert(result.ShiftId);
+                },
+                error: function (result) {
+                    alert(result.responseText);
+
+                }
+            });
+        });
+
+    });
+
+    /*function to reject the swap and delete notification */
+    $(document).ready(function () {
+
+        $('.reject-shift-btn').click(function () {
+            var id = $('#notification-id').text();
+
+
+            $.ajax({
+                cache: false,
+                type: "POST",
+                url: "/Dashboard?handler=RejectSwap",
+                data: { notificationId: id },
+                dataType: 'json',
+
+                headers: {
+                    RequestVerificationToken:
+                        $('input:hidden[name="__RequestVerificationToken"]').val() // security token
+                },
+                success: function (result) {
+
+                },
+                error: function (result) {
+                    alert(result.responseText);
+                }
+
+            });
+
+        });
+
+    });
+
+    /* function to request a list of employees to swap */
+    $(document).ready(function () {
+        $('#swap-btn').click(function () {
+            var shiftId = $('#shift-header').attr("value"); // storing the shift date variable
+            // alert(shiftId);
+            $("#staff-list").html("");
+            $("#modal-content").html("");
+
+            $.ajax({
+                cache: false,
+                type: "POST",
+                url: "/Dashboard?handler=GetEmployees", // handler
+                data: { shiftId: shiftId },
+                dataType: 'json',
+                headers: {
+                    RequestVerificationToken:
+                        $('input:hidden[name="__RequestVerificationToken"]').val() // security token
+                },
+                success: function (result) {
+                    alert(result[0].firstName);
+                    var content = document.getElementById('modal-content');
+                    var ul = document.getElementById("staff-list");
+                    var staffTitle = document.getElementById("shift-title");
+                    staffTitle.innerHTML = "Employees To Swap";
+                    //setAttribute
+                    for (var i = 0; i < result.length; i++) {
+                        var employee = result[i];
+                        //var li = document.createElement("input");
+                        //var check = document.createElement("input");
+                        //li.setAttribute('id', employee.employeeId); // setting value of the id attribute to the employee id
+                        var shiftProfile = document.createElement('div');
+                        shiftProfile.setAttribute('id', employee.employeeId);
+                        shiftProfile.setAttribute('class', "employee-swap-shift");
+
+                        var name = document.createElement('p');
+                        name.innerHTML = employee.firstName + " " + employee.lastName;
+                        var selectBtn = document.createElement('button');
+                        selectBtn.setAttribute('id', employee.employeeId);
+                        selectBtn.setAttribute('class', "btn btn-primary employee-swap-btn");
+                        // var checkbox = document.createElement("input");
+                        // checkbox.type = 'checkbox';
+                        document.getElementById('swap-btn').innerHTML = "Request Swap";
+
+                        //li.appendChild(checkbox);
+
+                        name.append(selectBtn);
+                        shiftProfile.appendChild(name);
+                        //shiftProfile.appendChild(selectBtn);
+                        // li.appendChild(document.createTextNode(employee.firstName + " " + employee.lastName + " " + employee.jobTitle));
+                        content.appendChild(shiftProfile);
+
+
+                        $('employee-swap-btn').click(function () {
+                            var empId = $(this).attr('id');
+                            var senderId = $('#id-attr').text();
+                            var shiftDate = $('#shift-header').attr('value');
+                            var notificationText = "Swap Request From " + $('#employee-full-name').text();
+                            var shiftId = document.getElementById('shift-id').innerHTML;
+                            alert(shiftDate);
+                            $.ajax({
+                                cache: false,
+                                type: "POST",
+                                url: "/Dashboard?handler=SendNotification", // handler
+                                data: { empId: empId, senderId: senderId, shiftDate: shiftDate, notificationText: notificationText, shiftId: shiftId },
+                                dataType: 'json',
+                                headers: {
+                                    RequestVerificationToken:
+                                        $('input:hidden[name="__RequestVerificationToken"]').val() // security token
+                                },
+                                success: function (result) {
+
+                                    alert(result);
+                                },
+                            });
+
+                        });
+
+
+                    }
+
+
+                },
+                error: function (result) {
+                    alert(result.responseText);
+                }
+            });
+
+        });
+
+    });
+
+
+
+
+</script>
+}

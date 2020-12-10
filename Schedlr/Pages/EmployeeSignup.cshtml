@@ -1,0 +1,152 @@
+﻿@page
+@model EmployeeSignupModel
+@{
+    ViewData["Title"] = "Sign Up";
+}
+<!-- anti forgery tokens offers security against users attempting to bypass the form by "pretending" to enter values-->
+
+@Html.AntiForgeryToken()
+
+
+    <div class="form-horizontal justify-content-center">
+        <div class="text-center">
+
+            <h1 class="display-4"> Create Account </h1>
+        </div>
+
+        <form method="post">
+            <div class=" w-25" style="margin-top: 100px">
+                <div class="form-group">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <!-- asp-for links the input text to a property of an object in the model-->
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Employee.EmployeeId, htmlAttributes: new { @class = "control-label col-md-10" })
+                        <div class="col-12">
+
+                            @Html.EditorFor(model => model.Employee.EmployeeId, new { htmlAttributes = new { @class = "form-control form" } })
+                            @Html.ValidationMessageFor(model => model.Employee.EmployeeId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="justify-content-center align-items-center w-50" style="">
+                <div class="form-group">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <!-- asp-for links the input text to a property of an object in the model-->
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Employee.JobTitle, htmlAttributes: new { @class = "control-label col-md-5" })
+                        <div class="col-12">
+
+                            @Html.EditorFor(model => model.Employee.JobTitle, new { htmlAttributes = new { @class = "form-control form" } })
+                            @Html.ValidationMessageFor(model => model.Employee.JobTitle, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-content-center align-items-center w-50" style="">
+                <div class="form-group">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <!-- asp-for links the input text to a property of an object in the model-->
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Employee.FirstName, htmlAttributes: new { @class = "control-label col-md-5" })
+                        <div class="col-12">
+
+                            @Html.EditorFor(model => model.Employee.FirstName, new { htmlAttributes = new { @class = "form-control form" } })
+                            @Html.ValidationMessageFor(model => model.Employee.FirstName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-content-center align-items-center w-50" style="">
+                <div class="form-group">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <!-- asp-for links the input text to a property of an object in the model-->
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Employee.LastName, htmlAttributes: new { @class = "control-label col-md-5" })
+                        <div class="col-12">
+
+                            @Html.EditorFor(model => model.Employee.LastName, new { htmlAttributes = new { @class = "form-control form" } })
+                            @Html.ValidationMessageFor(model => model.Employee.LastName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-content-center align-items-center w-50" style="">
+                <div class="form-group">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <!-- asp-for links the input text to a property of an object in the model-->
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Employee.EmailAddress, htmlAttributes: new { @class = "control-label col-md-5" })
+                        <div class="col-12">
+
+                            @Html.EditorFor(model => model.Employee.EmailAddress, new { htmlAttributes = new { @class = "form-control form" } })
+                            @Html.ValidationMessageFor(model => model.Employee.EmailAddress, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-content-center align-items-center w-50" style="">
+                <div class="form-group">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <!-- asp-for links the input text to a property of an object in the model-->
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Employee.ConfirmEmail, htmlAttributes: new { @class = "control-label col-md-5" })
+                        <div class="col-12">
+
+                            @Html.EditorFor(model => model.Employee.ConfirmEmail, new { htmlAttributes = new { @class = "form-control form" } })
+                            @Html.ValidationMessageFor(model => model.Employee.ConfirmEmail, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-content-center align-items-center w-50" style="">
+                <div class="form-group">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <!-- asp-for links the input text to a property of an object in the model-->
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Employee.Password, htmlAttributes: new { @class = "control-label col-md-5" })
+                        <div class="col-12">
+
+                            @Html.EditorFor(model => model.Employee.Password, new { htmlAttributes = new { @class = "form-control form" } })
+                            @Html.ValidationMessageFor(model => model.Employee.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-content-center w-50" style="">
+                <div class="form-group">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <!-- asp-for links the input text to a property of an object in the model-->
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Employee.ConfirmPassword, htmlAttributes: new { @class = "control-label col-md-5" })
+                        <div class="col-12">
+
+                            @Html.EditorFor(model => model.Employee.ConfirmPassword, new { htmlAttributes = new { @class = "form-control form" } })
+                            @Html.ValidationMessageFor(model => model.Employee.ConfirmPassword, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="justify-content-center align-items-center w-50" style="">
+                <div class="form-group">
+                    <div class=" col-5">
+                        <input type="submit" value="Create Account" class="btn btn-block btn-outline-light" />
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+
+
+<div>
+    @Html.ActionLink("Back to Home", "Index")
+</div>
+
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

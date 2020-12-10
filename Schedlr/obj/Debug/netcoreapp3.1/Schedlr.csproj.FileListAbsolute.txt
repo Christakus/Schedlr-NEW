@@ -1,0 +1,121 @@
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.exe
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.deps.json
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.runtimeconfig.json
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.runtimeconfig.dev.json
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.pdb
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.Views.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.Views.pdb
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.csprojAssemblyReference.cache
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.AssemblyInfoInputs.cache
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.AssemblyInfo.cs
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.RazorAssemblyInfo.cache
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.RazorAssemblyInfo.cs
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.TagHelpers.input.cache
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.TagHelpers.output.cache
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.RazorCoreGenerate.cache
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.RazorTargetAssemblyInfo.cache
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.RazorTargetAssemblyInfo.cs
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.Views.pdb
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\staticwebassets\Schedlr.StaticWebAssets.Manifest.cache
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\staticwebassets\Schedlr.StaticWebAssets.xml
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.pdb
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.genruntimeconfig.cache
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.csproj.CopyComplete
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\Login.cshtml.g.cs
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\EmployeeSignup.cshtml.g.cs
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\DataLibrary.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\DataLibrary.pdb
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.csproj.CoreCompileInputs.cache
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\app.config
+C:\Users\CBrew\Documents\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.dll.config
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.AssemblyInfoInputs.cache
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.AssemblyInfo.cs
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.csproj.CoreCompileInputs.cache
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.RazorAssemblyInfo.cache
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.RazorAssemblyInfo.cs
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.exe
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Database1.mdf
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Database1_log.ldf
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\app.config
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.dll.config
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.deps.json
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.runtimeconfig.json
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.runtimeconfig.dev.json
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.pdb
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.Views.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Schedlr.Views.pdb
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\System.Web.Mvc.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\System.Web.Razor.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\System.Web.Helpers.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\System.Web.WebPages.Deployment.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\DataLibrary.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\DataLibrary.pdb
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\bin\Debug\netcoreapp3.1\DataLibrary.dll.config
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.csprojAssemblyReference.cache
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.TagHelpers.input.cache
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.TagHelpers.output.cache
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.RazorCoreGenerate.cache
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\CreateMeeting.cshtml.g.cs
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\Dashboard.cshtml.g.cs
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\EmployeeSignup.cshtml.g.cs
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\Login.cshtml.g.cs
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.RazorTargetAssemblyInfo.cache
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.RazorTargetAssemblyInfo.cs
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.Views.pdb
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.csproj.CopyComplete
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\staticwebassets\Schedlr.StaticWebAssets.Manifest.cache
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\staticwebassets\Schedlr.StaticWebAssets.xml
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.dll
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.pdb
+C:\Users\CBrew\Documents\Final Year Project\Schedlr\Schedlr\Schedlr\obj\Debug\netcoreapp3.1\Schedlr.genruntimeconfig.cache
