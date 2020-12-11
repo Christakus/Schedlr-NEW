@@ -16,6 +16,29 @@
 
     <div class="col-md-4" style="">
 
+        <div class="card mb-3">
+        <h3 class="card-header">Profile Card</h3>
+        <div class="card-body">
+            <h5 class="card-title">@Model.loggedEmployee.FirstName @Model.loggedEmployee.LastName</h5>
+            <h6 class="card-subtitle text-muted">@Model.loggedEmployee.JobTitle</h6>
+        </div>
+        <svg xmlns="" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+        </svg>
+        <div class="card-body">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">EmployeeID: @Model.loggedEmployee.EmployeeId </li>
+            <li class="list-group-item">Email Address: @Model.loggedEmployee.EmailAddress</li>
+            <li class="list-group-item">Employee Since: xx/xx/xxxx</li>
+        </ul>
+       
+        <div class="card-footer text-muted">
+            
+        </div>
+    </div>
+        <!--
         <h4 style="text-align:center">Employee Profile</h4>
 
         <div class=" " onclick="">
@@ -27,6 +50,7 @@
 
             </div>
         </div>
+        -->
     </div>
 
 

@@ -100,7 +100,11 @@ html, body {
     color: #343a40!important;
 }
 
-.shiftCard {
+.shiftCard:hover {
+    background-color: whitesmoke !important;
+    color: #343a40 !important;
+    border-color: #343a40 !important;
+    border-style: solid !important;
 }
 .card {
     margin-bottom: 10px;
@@ -115,11 +119,7 @@ html, body {
 .empCard:hover {
 }
 .card:hover {
-    background-color: whitesmoke !important;
-    color: #343a40 !important;
-    border-color: #343a40 !important;
-    
-    border-style: solid !important;
+   
 }
 .dashboard {
 }
